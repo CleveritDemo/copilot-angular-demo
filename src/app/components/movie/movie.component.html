@@ -1,0 +1,21 @@
+<div class="movie-container" *ngIf="movie">
+  <div class="thumbnail">
+    <img [src]="movie.thumbnail" alt="{{ movie.name }}">
+  </div>
+  <div class="details">
+    <h1>{{ movie.name }}</h1>
+    <p><strong>Year:</strong> {{ movie.year }}</p>
+    <p><strong>Score:</strong> {{ movie.score }}</p>
+    <p><strong>Genres:</strong> {{ movie.generes }}</p>
+    <p><strong>Studio:</strong> {{ movie.studio }}</p>
+    <p><strong>Synopsis:</strong> {{ movie.details.synopsis }}</p>
+    <p><strong>Producer:</strong> {{ movie.details.producer }}</p>
+    <p><strong>Director:</strong> {{ movie.details.director }}</p>
+    <h2>Actors</h2>
+    <ul>
+      <li *ngFor="let actor of movie.details.actors">
+        <strong>{{ actor.name }}</strong> as {{ actor.character }} ({{ actor.age }} years old)
+      </li>
+    </ul>
+  </div>
+</div>

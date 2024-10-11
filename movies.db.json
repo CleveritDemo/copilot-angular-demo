@@ -1,0 +1,268 @@
+{
+    "movies": [
+      {
+        "id": "1",
+        "thumbnail": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+        "name": "Inception",
+        "year": 2010,
+        "score": 8.8,
+        "generes": "acción, ciencia ficción, thriller",
+        "studio": "Warner Bros.",
+        "details": {
+          "synopsis": "En un futuro no muy lejano, la tecnología ha avanzado hasta el punto de permitir a las personas compartir sus sueños con otros. Cobb, un ladrón experto en infiltrarse en los sueños de los demás, es contratado por un rico empresario llamado Saito para realizar una tarea imposible: plantar una idea en la mente de Robert Fischer, el hijo del dueño de una gran corporación. A cambio, Saito promete limpiar el nombre de Cobb y permitirle regresar a Estados Unidos, donde es buscado por la ley. Cobb acepta el desafío y reúne a un equipo de expertos, incluyendo a Arthur, Ariadne, Eames y Saito, para llevar a cabo la misión. Sin embargo, las cosas se complican cuando Cobb comienza a cuestionar la realidad de su propio mundo y la naturaleza de su relación con su esposa, Mal.",
+          "producer": "Emma Thomas",
+          "director": "Christopher Nolan",
+          "actors": [
+            {
+              "name": "Leonardo DiCaprio",
+              "age": 36,
+              "character": "Cobb",
+              "description": "Un ladrón experto en infiltrarse en los sueños de los demás, que es contratado por Saito para realizar una tarea imposible.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wo2hJpn04vDZY7TVd8pP3M24.jpg"
+            },
+            {
+              "name": "Joseph Gordon-Levitt",
+              "age": 29,
+              "character": "Arthur",
+              "description": "Un joven y talentoso ladrón que se une al equipo de Cobb para ayudar a plantar la idea en la mente de Robert Fischer.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jrZwIYDm9q6wJX8Rf5myQmH1.jpg"
+            },
+            {
+              "name": "Ellen Page",
+              "age": 23,
+              "character": "Ariadne",
+              "description": "Una joven y talentosa arquitecta que se une al equipo de Cobb para ayudar a diseñar el mundo de los sueños.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y52mja8o1wP2DmYsWZW9jZS9.jpg"
+            },
+            {
+              "name": "Tom Hardy",
+              "age": 33,
+              "character": "Eames",
+              "description": "Un joven y carismático ladrón que se une al equipo de Cobb para ayudar a plantar la idea en la mente de Robert Fischer.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vI3a8U1QyF3RtLjLjtT4U8U.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "thumbnail": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+        "name": "The Dark Knight",
+        "year": 2008,
+        "score": 9.0,
+        "generes": "acción, crimen, drama",
+        "studio": "Warner Bros.",
+        "details": {
+          "synopsis": "El Joker, un villano anárquico y caótico, ha llegado a Gotham City con el objetivo de demostrar que cualquier persona puede ser tan cruel y destructiva como él. Mientras tanto, Batman se enfrenta a su propio límite moral y ético al tratar de detener al Joker y proteger a la ciudad. La situación se complica cuando el Joker secuestra a Harvey Dent, el fiscal del distrito, y a Rachel Dawes, la novia de Bruce Wayne, y los utiliza como rehenes para demostrar su poder y su influencia.",
+          "producer": "Emma Thomas",
+          "director": "Christopher Nolan",
+          "actors": [
+            {
+              "name": "Christian Bale",
+              "age": 34,
+              "character": "Bruce Wayne / Batman",
+              "description": "Un millonario y filántropo que utiliza su riqueza y su inteligencia para luchar contra el crimen en Gotham City.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2bXbqYdUdgv2Oi1L8NYSwBzt.jpg"
+            },
+            {
+              "name": "Heath Ledger",
+              "age": 28,
+              "character": "Joker",
+              "description": "Un villano anárquico y caótico que llega a Gotham City con el objetivo de demostrar que cualquier persona puede ser tan cruel y destructiva como él.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y2msqODTtVkF4fQ7YIax1G9.jpg"
+            },
+            {
+              "name": "Aaron Eckhart",
+              "age": 40,
+              "character": "Harvey Dent / Dos Caras",
+              "description": "El fiscal del distrito de Gotham City que se convierte en un villano después de ser secuestrado y torturado por el Joker.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vI3a8U1QyF3RtLjLjtT4U8U.jpg"
+            },
+            {
+              "name": "Michael Caine",
+              "age": 75,
+              "character": "Alfred Pennyworth",
+              "description": "El leal mayordomo de Bruce Wayne que lo ayuda en su lucha contra el crimen.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2bXbqYdUdgv2Oi1L8NYSwBzt.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "thumbnail": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+        "name": "Interstellar",
+        "year": 2014,
+        "score": 8.6,
+        "generes": "aventuras, drama, ciencia ficción",
+        "studio": "Paramount Pictures",
+        "details": {
+          "synopsis": "En un futuro no muy lejano, la humanidad se enfrenta a una grave crisis alimentaria y energética. Un equipo de científicos y astronautas, liderados por el piloto Cooper, se embarcan en una misión para encontrar un nuevo hogar para la humanidad en un agujero de gusano que se encuentra cerca de Saturno. Mientras tanto, la hija de Cooper, Murph, se queda en la Tierra y se convierte en una científica que intenta comunicarse con su padre a través del tiempo y el espacio.",
+          "producer": "Emma Thomas",
+          "director": "Christopher Nolan",
+          "actors": [
+            {
+              "name": "Matthew McConaughey",
+              "age": 45,
+              "character": "Cooper",
+              "description": "Un piloto que se embarca en una misión para encontrar un nuevo hogar para la humanidad en un agujero de gusano.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2bXbqYdUdgv2Oi1L8NYSwBzt.jpg"
+            },
+            {
+              "name": "Anne Hathaway",
+              "age": 32,
+              "character": "Brand",
+              "description": "Una científica que se une a la misión de Cooper para encontrar un nuevo hogar para la humanidad.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y52mja8o1wP2DmYsWZW9jZS9.jpg"
+            },
+            {
+              "name": "Jessica Chastain",
+              "age": 37,
+              "character": "Murph",
+              "description": "La hija de Cooper que se queda en la Tierra y se convierte en una científica que intenta comunicarse con su padre a través del tiempo y el espacio.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vI3a8U1QyF3RtLjLjtT4U8U.jpg"
+            },
+            {
+              "name": "Michael Caine",
+              "age": 81,
+              "character": "Professor Brand",
+              "description": "Un científico que ayuda a Cooper y su equipo a encontrar un nuevo hogar para la humanidad.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2bXbqYdUdgv2Oi1L8NYSwBzt.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+        "name": "The Matrix",
+        "year": 1999,
+        "score": 8.7,
+        "generes": "acción, ciencia ficción",
+        "studio": "Warner Bros.",
+        "details": {
+          "synopsis": "En un futuro no muy lejano, la humanidad ha sido esclavizada por máquinas inteligentes que han creado una realidad virtual llamada la Matrix. Neo, un joven hacker, descubre que su vida es una ilusión y que él es el elegido para liberar a la humanidad de la Matrix.",
+          "producer": "Joel Silver",
+          "director": "Lana Wachowski, Lilly Wachowski",
+          "actors": [
+            {
+              "name": "Keanu Reeves",
+              "age": 35,
+              "character": "Neo",
+              "description": "Un joven hacker que descubre que su vida es una ilusión y que él es el elegido para liberar a la humanidad de la Matrix.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wo2hJpn04vDZY7TVd8pP3M24.jpg"
+            },
+            {
+              "name": "Laurence Fishburne",
+              "age": 38,
+              "character": "Morpheus",
+              "description": "Un líder de la resistencia humana que ayuda a Neo a entender la verdad sobre la Matrix.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jrZwIYDm9q6wJX8Rf5myQmH1.jpg"
+            },
+            {
+              "name": "Carrie-Anne Moss",
+              "age": 32,
+              "character": "Trinity",
+              "description": "Una miembro de la resistencia humana que se une a Neo en su lucha contra las máquinas.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y52mja8o1wP2DmYsWZW9jZS9.jpg"
+            },
+            {
+              "name": "Hugo Weaving",
+              "age": 39,
+              "character": "Agente Smith",
+              "description": "Un programa de computadora que se encarga de eliminar a cualquier amenaza para la Matrix.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vI3a8U1QyF3RtLjLjtT4U8U.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "name": "Fight Club",
+        "year": 1999,
+        "score": 8.8,
+        "generes": "drama",
+        "studio": "20th Century Fox",
+        "details": {
+          "synopsis": "Un hombre anónimo, que sufre de insomnio y depresión, se une a un club de lucha clandestino liderado por Tyler Durden, un carismático y misterioso individuo que se convierte en su mentor y amigo. A medida que el club crece y se vuelve más popular, el hombre anónimo comienza a cuestionar la verdadera naturaleza de Tyler y el club.",
+          "producer": "Art Linson",
+          "director": "David Fincher",
+          "actors": [
+            {
+              "name": "Brad Pitt",
+              "age": 36,
+              "character": "Tyler Durden",
+              "description": "Un carismático y misterioso individuo que lidera el club de lucha clandestino.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wo2hJpn04vDZY7TVd8pP3M24.jpg"
+            },
+            {
+              "name": "Edward Norton",
+              "age": 30,
+              "character": "El narrador",
+              "description": "Un hombre anónimo que sufre de insomnio y depresión y se une al club de lucha clandestino.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jrZwIYDm9q6wJX8Rf5myQmH1.jpg"
+            },
+            {
+              "name": "Helena Bonham Carter",
+              "age": 33,
+              "character": "Marla Singer",
+              "description": "Una mujer que se une al club de lucha clandestino y se convierte en la novia del narrador.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y52mja8o1wP2DmYsWZW9jZS9.jpg"
+            },
+            {
+              "name": "Meat Loaf",
+              "age": 52,
+              "character": "Big Bob",
+              "description": "Un miembro del club de lucha clandestino que se convierte en amigo del narrador.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vI3a8U1QyF3RtLjLjtT4U8U.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "id": "6",
+        "thumbnail": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+        "name": "Pulp Fiction",
+        "year": 1994,
+        "score": 8.9,
+        "generes": "crimen, drama",
+        "studio": "Miramax",
+        "details": {
+          "synopsis": "La historia sigue a dos asesinos a sueldo, Vincent Vega y Jules Winnfield, que trabajan para el mafioso Marsellus Wallace. La película también sigue a un boxeador llamado Butch Coolidge, que se ve envuelto en un problema con Marsellus después de no cumplir con sus órdenes.",
+          "producer": "Lawrence Bender",
+          "director": "Quentin Tarantino",
+          "actors": [
+            {
+              "name": "John Travolta",
+              "age": 40,
+              "character": "Vincent Vega",
+              "description": "Un asesino a sueldo que trabaja para Marsellus Wallace.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wo2hJpn04vDZY7TVd8pP3M24.jpg"
+            },
+            {
+              "name": "Samuel L. Jackson",
+              "age": 46,
+              "character": "Jules Winnfield",
+              "description": "Un asesino a sueldo que trabaja para Marsellus Wallace y es socio de Vincent Vega.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jrZwIYDm9q6wJX8Rf5myQmH1.jpg"
+            },
+            {
+              "name": "Uma Thurman",
+              "age": 24,
+              "character": "Mia Wallace",
+              "description": "La esposa de Marsellus Wallace y una actriz que se convierte en objeto de deseo de Vincent Vega.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/y52mja8o1wP2DmYsWZW9jZS9.jpg"
+            },
+            {
+              "name": "Bruce Willis",
+              "age": 39,
+              "character": "Butch Coolidge",
+              "description": "Un boxeador que se ve envuelto en un problema con Marsellus después de no cumplir con sus órdenes.",
+              "photo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vI3a8U1QyF3RtLjLjtT4U8U.jpg"
+            }
+          ]
+        }
+      }
+    ]
+  }
