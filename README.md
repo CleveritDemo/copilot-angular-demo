@@ -63,6 +63,7 @@ Una vez clonado el repositorio, nos movemos dentro de la carpeta del proyecto.
 
 ```bash
 cd copilot-angular-demo
+npm install
 ```
 
 > **NOTA: Standalone Components**.
