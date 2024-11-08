@@ -278,12 +278,97 @@ Haremos que Copilot modifique el tamaño de la imagen por nosotros al pedirle qu
 @workspace Modifica el componente #file:movie.component.html para que la imagen de la pelicula ocupe el tamaño justo a nivel de altura del area disponible en el navegador, sin perder la proporcion de la imagen.
 ```
 
-### 11. Retos propuestos.
+### 11. Top 3 Peliculas
+
+En este punto, le pediremos a GitHub Copilot que nos ayude a implementar un componente que muestre las 3 películas mejor calificadas en la aplicación basado en el campo score.
+
+**Prompt 14.**
+
+```
+
+@workspace Necesito que construyas un nuevo componente llamado TopMovies, este componente debe mostrar las 3 peliculas mejor calificadas en la aplicacion basado en el campo score. Este componente debe ser visible en el componente #file:home.component.html , el titulo de esta seccion debe ser "Top 3 Peliculas" y debe estar centrado
+```
+
+**Resultado esperado:**
+
+- Generación de un nuevo componente llamado `TopMovies`.
+- Implementación de la lógica para mostrar las 3 películas mejor calificadas en la aplicación.
+- Inclusión del componente `TopMovies` en el componente `Home`.
+
+### 12. Sección de peliculas relacionadas por genero en el detalle de la pelicula.
+
+En este punto, le pediremos a GitHub Copilot que nos ayude a implementar un componente que muestre las películas relacionadas por género en el detalle de la película seleccionada.
+
+**Prompt 15.**
+
+```
+
+@workspace Necesito que construyas un nuevo componente llamado RelatedMovies, este componente debe mostrar las peliculas relacionadas por genero en el detalle de la pelicula seleccionada #file:movie.component.html Este componente debe ser mostrado en el componente #file:movie-card.component.html. El titulo de la seccion debe ser "Peliculas relacionadas por genero" y debe estar centrado
+```
+
+En caso de que la pelicula en la cual se encuentre el usuario, este apareciendo en la seccion de peliculas relacionadas, se le puede solicitar ayuda a copilot
+
+**Prompt 16.**
+
+```
+@workspace las peliculas relacionadas no debe contener la pelicula en la cual se encuentra el usuario
+```
+
+**Resultado esperado:**
+
+- Generación de un nuevo componente llamado `RelatedMovies`.
+- Implementación de la lógica para mostrar las películas relacionadas por género en el detalle de la película seleccionada.
+- Inclusión del componente `RelatedMovies` en el componente `Movie`.
+
+### 13 Funcionalidad de Favoritos
+
+En este punto, le pediremos a GitHub Copilot que nos ayude a implementar una funcionalidad que permita marcara una pelicula como favorita.
+
+**Prompt 17.**
+
+```
+@workspace Necesito que construyas un nuevo componente llamado favorite-button, este componente por ahora debe mostrar un boton con icono de corazón de angular material. Este componente debe ser mostrado en el componente #file:movie-card.component.html
+```
+
+En tal caso de que los botones no este separados, podemos solicitarle ayuda a copilot.
+
+**Prompt 18.**
+
+```
+Ajusta los estilos de los botones en el componente #file:movie-card.component.html , el boton de mas info debe estar a la izquierda y el de favorite-button a la derecha
+```
+
+**Resultado esperado:**
+
+- Generación de un nuevo componente llamado `FavoriteButton`.
+
+**Prompt 19.**
+
+```
+Al hacer click en el boton de favoritos, necesito que se agregue la pelicula actual a una lista de favoritos, este listado debe ser almacenado en el local storage del navegador, se debe validar si la pelicula ya esta en la lista de favoritos y si es asi, se debe remover de la lista.
+```
+
+En tal caso que copilot no muestre un icono o color para indicar que la pelicula ha sido marcada como favorita, podemos solicitarle ayuda.
+
+**Prompt 20.**
+
+```
+@workspace Necesito que el boton de favoritos tenga el icono favorites, cuando este agregado como favorito y el icono favorite_border cuando no lo este
+```
+
+**Resultado esperado:**
+
+- Implementación de la lógica para agregar y remover películas de la lista de favoritos.
+- Almacenamiento de la lista de favoritos en el local storage del navegador.
+- Cambio de icono y color del botón de favoritos al agregar o remover una película de la lista.
+
+### 14. Retos propuestos.
 
 A este punto hemos logrado finalizar el practico y visto como GitHub Copilot nos ha ayudado a construir una aplicacion de Angular sencilla, sin embargo puede exapndirse mas el abanico de funcionalidades que se pueden implementar. A continuación se deja una serie de retos propuestos para ser completados por el equipo en el tiempo restante disponible.
 
-1. Implementar el resto de operaciones CRUD: Con ayuda de copilot, desarrollar la logica y componentes necesarios para realizar la carga, la actualizacion y eliminacion de peliculas dentro de la aplicacion.
+1. Implementar un componente de favoritos, el cual debe mostrar las peliculas marcadas como favoritas en una lista. A este componente se deberia acceder desde un link en la barra de navegacion principal.
+2. Implementar el resto de operaciones CRUD: Con ayuda de copilot, desarrollar la logica y componentes necesarios para realizar la carga, la actualizacion y eliminacion de peliculas dentro de la aplicacion.
 
-2. Implementar un filtrado: Construir un componente que permita filtrar el listado de peliculas en base a ciertas categorias como `Año`, `Genero`, `Estudio`, etc.
+3. Implementar un filtrado: Construir un componente que permita filtrar el listado de peliculas en base a ciertas categorias como `Año`, `Genero`, `Estudio`, etc.
 
-3. Implementar pruebas unitarias para las funcionalidades de los servicios y probar que los metodos funcionan correctamente.
+4. Implementar pruebas unitarias para las funcionalidades de los servicios y probar que los metodos funcionan correctamente.
