@@ -1,4 +1,4 @@
-import { MovieDetail } from './movie-detail';
+import { MovieDetails } from './movie-details';
 
 export interface Movie {
   id: string;
@@ -8,5 +8,5 @@ export interface Movie {
   score: number;
   generes: string;
   studio: string;
-  details: MovieDetail;
+  details: MovieDetails;
 }

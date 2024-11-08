@@ -1,6 +1,6 @@
 <div class="movie-container" *ngIf="movie">
   <div class="thumbnail">
-    <img [src]="movie.thumbnail" alt="{{ movie.name }}">
+    <img [src]="movie.thumbnail" alt="{{ movie.name }}" />
   </div>
   <div class="details">
     <h1>{{ movie.name }}</h1>
@@ -14,8 +14,16 @@
     <h2>Actors</h2>
     <ul>
       <li *ngFor="let actor of movie.details.actors">
-        <strong>{{ actor.name }}</strong> as {{ actor.character }} ({{ actor.age }} years old)
+        <strong>{{ actor.name }}</strong> as {{ actor.character }} ({{
+          actor.age
+        }}
+        years old)
       </li>
     </ul>
+    <button mat-button (click)="goBack()">Volver al listado</button>
   </div>
 </div>
+<app-related-movies
+  [genres]="genres"
+  [currentMovieId]="movie!.id"
+></app-related-movies>

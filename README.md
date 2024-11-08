@@ -6,7 +6,7 @@ El objetivo principal será construir una aplicación sencilla que permita visua
 
 Además, emplearemos GitHub Copilot para crear una API REST de prueba usando `json-server`, lo que nos permitirá cargar datos en la aplicación a medida que avanzamos en este ejercicio práctico.
 
-## ✅ Specific Objectives:
+## ✅ Objetivos específicos.
 
 - Configurar el Entorno de Desarrollo
 
@@ -63,6 +63,7 @@ Una vez clonado el repositorio, nos movemos dentro de la carpeta del proyecto.
 
 ```bash
 cd copilot-angular-demo
+npm install
 ```
 
 > **NOTA: Standalone Components**.

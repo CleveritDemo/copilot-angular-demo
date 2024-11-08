@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MovieCardComponent } from '../movie-card/movie-card.component';
-import { MovieService } from '../../services/movie.service';
-import { Movie } from '../../interfaces/movie';
+import { MovieService } from '../services/movie.service';
+import { Movie } from '../interfaces/movie';
+import { TopMoviesComponent } from '../top-movies/top-movies.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, MovieCardComponent],
+  imports: [CommonModule, MovieCardComponent, TopMoviesComponent],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
   movies: Movie[] = [];
