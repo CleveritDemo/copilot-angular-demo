@@ -1,0 +1,40 @@
+.movie-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  height: 100vh; /* Ocupa toda la altura del área disponible */
+  box-sizing: border-box;
+}
+
+.thumbnail {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumbnail img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 8px;
+}
+
+.details {
+  flex: 1;
+  overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado grande */
+}
+
+.details h1 {
+  margin-top: 0;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details ul li {
+  margin-bottom: 8px;
+}
