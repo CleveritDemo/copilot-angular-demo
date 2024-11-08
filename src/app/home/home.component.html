@@ -1,6 +1,3 @@
 <div class="grid-container">
-  <app-movie-card></app-movie-card>
-  <app-movie-card></app-movie-card>
-  <app-movie-card></app-movie-card>
-  <app-movie-card></app-movie-card>
+  <app-movie-card *ngFor="let movie of movies" [movie]="movie"></app-movie-card>
 </div>
