@@ -1,12 +1,24 @@
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Cambiado de 200px a 300px */
   gap: 16px;
   padding: 16px;
 }
 
+mat-card {
+  margin: 16px;
+  width: 100%; /* Asegura que las tarjetas ocupen el ancho completo del contenedor */
+}
+mat-card img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
 .card {
-  background-color: #fff;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;

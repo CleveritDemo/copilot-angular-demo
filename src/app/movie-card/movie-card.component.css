@@ -1,0 +1,13 @@
+mat-card {
+  margin: 16px;
+}
+
+mat-card img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+mat-chip {
+  height: 24px; /* Reduce la altura del chip */
+  line-height: 24px; /* Alinea el texto verticalmente */
+}
