@@ -1,0 +1,9 @@
+<div class="related-movies-container">
+  <h2>Películas relacionadas por género</h2>
+  <div class="grid-container">
+    <app-movie-card
+      *ngFor="let movie of relatedMovies"
+      [movie]="movie"
+    ></app-movie-card>
+  </div>
+</div>

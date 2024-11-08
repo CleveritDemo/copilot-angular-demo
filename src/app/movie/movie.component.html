@@ -23,3 +23,7 @@
     <button mat-button (click)="goBack()">Volver al listado</button>
   </div>
 </div>
+<app-related-movies
+  [genres]="genres"
+  [currentMovieId]="movie!.id"
+></app-related-movies>
