@@ -1,0 +1,9 @@
+<div class="top-movies-container">
+  <h2>Top 3 Películas</h2>
+  <div class="grid-container">
+    <app-movie-card
+      *ngFor="let movie of topMovies"
+      [movie]="movie"
+    ></app-movie-card>
+  </div>
+</div>
