@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { Movie } from '../interfaces/movie';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FavoriteButtonComponent } from '../favorite-button/favorite-button.component';
 
 @Component({
   selector: 'app-movie-card',
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
     MatChipsModule,
     CommonModule,
     RouterModule,
+    FavoriteButtonComponent,
   ],
   templateUrl: './movie-card.component.html',
   styleUrls: ['./movie-card.component.css'],

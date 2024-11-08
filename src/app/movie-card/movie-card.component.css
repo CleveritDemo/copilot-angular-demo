@@ -11,3 +11,13 @@ mat-chip {
   height: 24px; /* Reduce la altura del chip */
   line-height: 24px; /* Alinea el texto verticalmente */
 }
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
