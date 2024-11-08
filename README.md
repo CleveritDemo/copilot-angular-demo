@@ -37,7 +37,7 @@ Permitir que el usuario navegue desde el listado general de películas hasta el 
 Configurar rutas en Angular para gestionar las vistas del listado y los detalles de películas.
 Realizar Pruebas Básicas y Validación.
 
-![app demo](/assets/gif.gif)
+![app demo](/assets/gif2.gif)
 
 ## 🛠 Requerimientos.
 
