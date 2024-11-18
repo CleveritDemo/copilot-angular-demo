@@ -1,41 +1,41 @@
 # 💻 Copilot Angular Demo
 
-En este proyecto de demostración exploraremos cómo GitHub Copilot puede facilitar el desarrollo de aplicaciones web utilizando el framework Angular.
+In this demo project, we will explore how GitHub Copilot can facilitate web application development using the Angular framework.
 
-El objetivo principal será construir una aplicación sencilla que permita visualizar un listado de películas y sus detalles completos.
+The main objective will be to build a simple application that allows viewing a list of movies and their complete details.
 
-Además, emplearemos GitHub Copilot para crear una API REST de prueba usando `json-server`, lo que nos permitirá cargar datos en la aplicación a medida que avanzamos en este ejercicio práctico.
+Additionally, we will use GitHub Copilot to create a REST API using `json-server`, which will allow us to load data into the application as we progress through this practical exercise.
 
-## ✅ Objetivos específicos.
+## ✅ Specific Objectives
 
-- Configurar el Entorno de Desarrollo
+- Configure the Development Environment
 
-  1. Instalar dependencias
-  2. Configurar json-server como API REST "mock" para proveer datos de prueba a la aplicación.
-  3. Integrar Angular Material para utilizar sus componentes y estilos en la interfaz.
+  1. Install dependencies
+  2. Configure json-server as a mock REST API to provide test data to the application
+  3. Integrate Angular Material to use its components and styles in the interface
 
-- Crear Componentes en Angular
+- Create Angular Components
 
-  1. Crear un componente principal para el listado de películas.
-  2. Desarrollar un componente de tarjeta (card) para mostrar información básica de cada película.
-  3. Implementar un componente de detalles de película, que permita ver información completa al seleccionar una película del listado.
+  1. Create a main component for the movie listing
+  2. Develop a card component to display basic information for each movie
+  3. Implement a movie details component that allows viewing complete information when selecting a movie from the list
 
-- Utilizar GitHub Copilot para Acelerar el Desarrollo
+- Use GitHub Copilot to Accelerate Development
 
-  1. Aprovechar las sugerencias de Copilot para la creación de componentes y servicios.
-  2. Utilizar Copilot para generar código repetitivo y optimizar el tiempo de desarrollo.
+  1. Take advantage of Copilot's suggestions for creating components and services
+  2. Use Copilot to generate repetitive code and optimize development time
 
-- Usar componentes de Angular Material, como cards, chips y buttons para estructurar la interfaz.
+- Use Angular Material components like cards, chips and buttons to structure the interface
 
-  1. Personalizar estilos y colores para una experiencia de usuario coherente y visualmente atractiva.
+  1. Customize styles and colors for a coherent and visually appealing user experience
 
-- Configurar un servicio en Angular para consumir datos de la API REST "mock" (json-server).
-  1. Implementar métodos para listar y seleccionar películas a través de este servicio.
-  2. Desarrollar Funcionalidades de Navegación y Detalle
+- Configure an Angular service to consume data from the mock REST API (json-server)
+  1. Implement methods to list and select movies through this service
+  2. Develop Navigation and Detail Features
 
-Permitir que el usuario navegue desde el listado general de películas hasta el detalle completo de cada una.
-Configurar rutas en Angular para gestionar las vistas del listado y los detalles de películas.
-Realizar Pruebas Básicas y Validación.
+Allow users to navigate from the general movie listing to the complete details of each one.
+Configure routes in Angular to manage the movie listing and details views.
+Perform Basic Testing and Validation.
 
 ![app demo](/assets/gif2.gif)
 
@@ -43,332 +43,331 @@ Realizar Pruebas Básicas y Validación.
 
 1. NodeJS v20.x - https://nodejs.org/en
 2. Angular v18 - https://angular.dev/installation
-3. Visual Studio Code.
-4. Github Copilot Extension para Visual Studio Code.
+3. Visual Studio Code
+4. GitHub Copilot Extension for Visual Studio Code
 5. Git
 6. json-server
-7. Github Copilot License.
+7. GitHub Copilot License
 
 ## 🚀 Hands On.
 
-### 1. Clonar el repositorio.
+### 1. Clone the repository
 
-Para comenzar, clonaremos el repositorio en nuestra maquina local. Para ello, ejecutamos el siguiente comando:
+To begin, we will clone the repository on our local machine. To do this, we execute the following command:
 
 ```bash
 git clone https://github.com/CleveritDemo/copilot-angular-demo
 ```
 
-Una vez clonado el repositorio, nos movemos dentro de la carpeta del proyecto.
+Once the repository is cloned, we move into the project folder.
 
 ```bash
 cd copilot-angular-demo
 npm install
 ```
 
-> **NOTA: Standalone Components**.
+> **NOTE: Standalone Components**.
 >
-> A partir de la version 14 de angular se introdujeron los standalone components (componentes autonomos), y a partir de la version 17 de angular, se mantienen como la forma por defecto de crear componentes en Angular. Este practico se construye empleando estos componentes, en lugar de los tradicionales modulos.
+> Starting from Angular version 14, standalone components were introduced, and from Angular version 17, they remain as the default way to create components in Angular. This practical exercise is built using these components, instead of the traditional modules.
 
-### 2. Incorporando Angular Material.
+### 2. Incorporating Angular Material
 
-En este punto le preguntaremos a copilot como podemos incluir Angular Material. Formulamos un prompt acorde y se lo proporcionamos al Chat.
+At this point, we will ask Copilot how we can include Angular Material. We will formulate an appropriate prompt and provide it to the Chat.
 
 **Prompt 1.**
 
 ```
-@workspace Como puedo agregar la libreria de componentes de angular material en mi proyecto Angular?
+@workspace How can I add the Angular Material component library to my Angular project?
 ```
 
-**Respuesta esperada:**
+**Expected response:**
 
-- Listado de pasos para la instalacion de Angular Material en el proyecto.
-- Formas de configurar la libreria para personalizacion de estilos.
+- List of steps for installing Angular Material in the project.
+- Ways to configure the library for style customization.
 
-### 3. Construyendo barra de navegación principal.
+### 3. Building the main navigation bar
 
-Teniendo ya instalada la libreria de Angular Material le solicitaremos a Github Copilot que nos indique como construir una barra de navegacion principal en el componente principal de la aplicación **app.component.html**
+Having already installed the Angular Material library, we will ask GitHub Copilot to show us how to build a main navigation bar in the application's main component **app.component.html**
 
 **Prompt 2.**
 
 ```shell
-@workspace Quiero construir una barra de navegacion utilizando el componente Toolbar de Angular Material. Este componente debe mostrar en la parte izquierda el titulo o nombre de mi aplicacion, seguido de tres botones que implementaran funcionalidades de enrutamiento hacia otros componentes aun no desarrollados. Estos botones son: Home, Contacto, Sobre nosotros.
+@workspace I want to build a navigation bar using the Angular Material Toolbar component. This component should display the title or name of my application on the left side, followed by three buttons that will implement routing functionality to other components not yet developed. These buttons are: Home, Contact, About us.
 ```
 
-**Resultado esperado**
+**Expected result**
 
-- Generación de codigo de plantilla HTML para la barra de navegacion.
-- Lógica de codigo para la importación y configuracion del componente toolbar de angular material.
+- Generation of HTML template code for the navigation bar.
+- Code logic for importing and configuring the Angular Material toolbar component.
 
-### 4. Construyendo componente principal: Home
+### 4. Building main component: Home
 
-En este punto, con ayuda de copilot, construiremos el componente de entrada o vista inicial de la aplicación llamada **Home** para ello, utilizaremos el siguiente prompt:
+At this point, with Copilot's help, we will build the entry component or initial view of the application called **Home**. For this, we will use the following prompt:
 
 **Prompt 3.**
 
 ```
-@workspace Quiero generar un nuevo componente de Angular llamado "Home" este componente mostrara una grilla de CSS Grid en donde podre visualizar "cards". Genera una estructura dummy, que mas adelante pueda ser modificada.
+@workspace I want to generate a new Angular component called "Home" this component will show a CSS Grid layout where I can display "cards". Generate a dummy structure that can be modified later.
 ```
 
-**Resulado esperado**
+**Expected result**
 
-- Indicación del comando del Angular CLI para generar el componente Home.
-- Estructura de template HTML para el componente Home.
-- Estructura CSS para el componente Home.
-- Logica de codigo Typescript para el componente Home.
-- Configuración del enrutamiento para la ruta `/home`y `/`.
+- Indication of the Angular CLI command to generate the Home component.
+- HTML template structure for the Home component.
+- CSS structure for the Home component.
+- TypeScript code logic for the Home component.
+- Routing configuration for the `/home` and `/` routes.
 
-### 5. Construyendo componente de Detalle: MovieCard
+### 5. Building Detail Component: MovieCard
 
-El componente movie card, como su nombre lo indica, es un pequeño card que tomara como base la Card existente en la librería de Angular Material. Su funcionalidad radica en que se enfocara en mostrar información básica de una película.
+The movie card component, as its name suggests, is a small card that will be based on the existing Card in the Angular Material library. Its functionality lies in that it will focus on showing basic information about a movie.
 
 **Prompt 4.**
 
 ```
-@workspace Quiero un componente llamado MovieCard, este compoennte debe implementar la libreria de Angular Material importando los elementos necesarios para utlizar las Cards de material design.
+@workspace I want a component called MovieCard, this component should implement the Angular Material library importing the necessary elements to use Material Design Cards.
 ```
 
-**Resulado esperado**
+**Expected result**
 
-- Indicación del comando del Angular CLI para generar el componente MovieCard.
-- Estructura de template HTML para el componente MovieCard.
-- Estructura CSS para el componente MovieCard.
-- Logica de codigo Typescript para el componente MovieCard.
-- Configuración del componente dentro del componente Home.
+- Indication of the Angular CLI command to generate the MovieCard component.
+- HTML template structure for the MovieCard component.
+- CSS structure for the MovieCard component.
+- TypeScript code logic for the MovieCard component.
+- Configuration of the component within the Home component.
 
-### 6. Integracion de peticiones HTTP y datos de peliculas.
+### 6. Integration of HTTP requests and movie data
 
-En este punto requeriremos de un set de datos que podamos utilizar como fuente de información para cargar de datos nuestra aplicación web. Hasta los momentos no hay data que permita visualizar los componentes que se han construido.
+At this point, we will need a dataset that we can use as a source of information to load data into our web application. So far, there is no data to allow visualization of the components that have been built.
 
-#### Configuracion de json-server
+#### json-server configuration
 
-En el repositorio se ha dejado cargado un archivo llamado **movies.db.json**, el cual contiene una estructura JSON con información de peliculas que podemos utilizar.
+In the repository, a file called **movies.db.json** has been loaded, which contains a JSON structure with movie information that we can use.
 
-En este punto usaremos la herramienta **json-server** para hacer que este archivo pueda simular ser un API REST completamente funcional para nuestra aplicacion.
+At this point, we will use the **json-server** tool to make this file simulate being a fully functional REST API for our application.
 
-Usemos Github copilot para consultar como se puede instalar esta herramienta.
+Let's use GitHub Copilot to find out how to install this tool.
 
 **Prompt 5.**
 
 ```
-Como se puede instalar y configurar json server para servir este archivo como un API #file:movies.db.json
+How can I install and configure json-server to serve this file as an API #file:movies.db.json
 ```
 
-**Resultado esperado.**
+**Expected result**
 
-- Pasos para la instalación y ejecución de la herramienta json-server mediante **npm**.
+- Steps for installing and running the json-server tool using **npm**.
 
-#### Configuracion de el proveedor http de angular.
+#### Configuration of Angular's HTTP provider
 
-Para realizar peticiones HTTP, angular incorpora funciones dedicadas y optimizadas para ello. Es por eso que debemos incorporar al `providerHttpClient`de angular para manejar todo el tema de comunicación con nuestra API REST.
+To make HTTP requests, Angular incorporates dedicated and optimized functions for this purpose. That's why we need to incorporate Angular's `provideHttpClient` to handle all communication with our REST API.
 
 **Prompt 6.**
 
 ```
-@workspace Necesito implementar el proveedor providerHttpClient en mi aplicacion, puedes indicarme paso a paso lo que es necesario realizar para implemenarlo?
+@workspace I need to implement the provideHttpClient provider in my application, can you tell me step by step what needs to be done to implement it?
 ```
 
-**Resultado esperado.**
+**Expected result**
 
-- Paso a paso indicando la configuración del `providerHttpClient` dentro del archivo de configuraciones de la aplicacion Angular.
+- Step by step instructions indicating the configuration of `provideHttpClient` within the Angular application's configuration file.
 
-### 7. Generación de interfaces
+### 7. Interface Generation
 
-Para evitar manejar un monton de variables, constantes y propiedades, le pediremos a Copilot que construya interfaces. Estas permitiran homogeneizar las propiedades y el tipo de objeto con el que se trabajara a lo largo de la aplicacion.
+To avoid handling a lot of variables, constants and properties, we will ask Copilot to build interfaces. These will allow us to homogenize the properties and the type of object that will be worked with throughout the application.
 
 **Prompt 7.**
 
 ```
-@workspace Quiero que construyas un archivo de interfaz basado en la estructura del archivo #file:movies.db.json dentro de un directorio llamado interfaces
+@workspace I want you to build an interface file based on the structure of the #file:movies.db.json file inside a directory called interfaces
 ```
 
-**Resultado esperado.**
+**Expected result**
 
-- Se va a generar un archivo de interfaces que contiene las interfaces `Actor`, `MovieDetail` y `Movie` o interfaces con nombres similares.
+- An interface file will be generated containing the interfaces `Actor`, `MovieDetail` and `Movie` or interfaces with similar names.
 
-### 8. Generacion de la capa de servicios.
+### 8. Service Layer Generation
 
-Para no tener la logica implementada en componentes directamente podemos encapsular todas estas operaciones en un servicio de Angular. Dicho servicio sera inyectado en los componentes mediante la inyeccion de dependencias automatica del framework, garantizando que se puedan acceder a metodos y logica de programacion de un servicio especifico desde multiples componentes.
+To avoid having logic implemented directly in components, we can encapsulate all these operations in an Angular service. This service will be injected into components through the framework's automatic dependency injection, ensuring that methods and programming logic from a specific service can be accessed from multiple components.
 
 **Prompt 8.**
 
 ```
-@workspace Necesito que construyas un archivo de servicios llamado movie-service, este archivo debe contener las operaciones CRUD necesarias para manipular la informacion de las peliculas. No utilices RxJS. Recuerda que implementamos un API mediante json-server cuya URL es: http://localhost:3000/movies
+@workspace I need you to build a service file called movie-service, this file should contain the necessary CRUD operations to manipulate the movie information. Don't use RxJS. Remember that we implemented an API using json-server whose URL is: http://localhost:3000/movies
 ```
 
-**Resultado esperado.**
+**Expected result**
 
-- Se genera un archivo de servicios conteniendo la logica de las operaciones CRUD a través del API Rest generada mediante json-server
+- A service file is generated containing the logic for CRUD operations through the REST API generated using json-server
 
-> **NOTA: RxJS**
+> **NOTE: RxJS**
 >
-> Se omite el uso de RxJS de forma especifica, porque comunmente se utiliza esta libreria para manejar el flujo de los datos de forma reactiva en Angular, sin embargo, el uso de RxJS esta fuera del alcance de este práctico.
+> The use of RxJS is specifically omitted, because this library is commonly used to handle data flow reactively in Angular, however, the use of RxJS is outside the scope of this practical exercise.
 
-#### Implementacion del servicio movies-service en el componente Home
+#### Implementation of the movies-service in the Home component
 
 **Prompt 9.**
 
 ```
-@workspace Implementa el servicio #file:movie.service.ts en el componente #file:home.component.ts. Aqui debemos implementar concretamente el llamado al metodo de listado de todas las peliculas.
+@workspace Implement the service #file:movie.service.ts in the component #file:home.component.ts. Here we need to specifically implement the method call to list all movies.
 ```
 
-**Resultado esperado.**
+**Expected result**
 
-- Este prompt, generará la estructura de implementación del metodo `getMovies` existente en el servicio `movies.service`.
+- This prompt will generate the implementation structure of the `getMovies` method existing in the `movies.service`.
 
-Llegados a este punto, podemos realizar una prueba del servicio utilizando el comando `ng serve` para correr la aplicacion web dentro del navegador y visualizar el listado de peliculas. En caso de error nos apoyaremos con github copilot para solventarlo.
+At this point, we can test the service using the `ng serve` command to run the web application in the browser and view the list of movies. In case of error, we will rely on GitHub Copilot to solve it.
 
-### 9. Ajustando el componente Movies Card
+### 9. Adjusting the Movies Card component
 
-En este paso, tomaremos como referencia los atributos principales que se encuentran en cada elemento de película en el archivo **movies.db.json**, Los cuales son: `thumbnail`, `name`, `year`, `score`, `genres`.
+In this step, we will take as reference the main attributes found in each movie element in the **movies.db.json** file, which are: `thumbnail`, `name`, `year`, `score`, `genres`.
 
-El objetivo es usar GitHub Copilot para mejorar el diseño del componente card, de forma que su apariencia sea mejore y sea mucho mas atractivo visualmente.
+The goal is to use GitHub Copilot to improve the design of the card component, so that its appearance is enhanced and becomes much more visually attractive.
 
 **Prompt 10.**
 
 ```
-@workspace Necesito que modifiques el #file:home.component.html #file:movie-card.component.ts incorporando los parametros thubmnail, name, year, score y genres. Los cuales existen en la interfaz #file:movie.ts. A su vez quiero que el string de genres, lo dividas por cada genero y utilices el componente "Chips" de Angular Material para representar cada genero.
+@workspace I need you to modify #file:home.component.html #file:movie-card.component.ts incorporating the parameters thumbnail, name, year, score and genres. Which exist in the interface #file:movie.ts. Also, I want you to split the genres string for each genre and use the Angular Material "Chips" component to represent each genre.
 ```
 
-Para reducir la cantidad de parametros y atributos, le solicitamos a GitHub Copilot que implemente para el componente MovieCard la interfaz `Movie` como objeto de entrada. Asi solamente pasamos una unica propiedad en lugar de varias.
+To reduce the number of parameters and attributes, we ask GitHub Copilot to implement the `Movie` interface as an input object for the MovieCard component. This way we only pass a single property instead of several.
 
 **Prompt 11.**
 
 ```
-@workspace Modifica el componente #file:movie-card.component.html #file:movie-card.component.ts para que en lugar de recibir parametro por parametro, reciba directamente un objeto del tipo #file:movie.ts
+@workspace Modify the component #file:movie-card.component.html #file:movie-card.component.ts so that instead of receiving parameter by parameter, it directly receives an object of type #file:movie.ts
 ```
 
-Le pedimos nuevamente ayuda a Copilot para algunos ajustes adicionales a nivel estetico, en este caso, le pediremos que nos ayude a ensanchar mas las columnas y por ende las cards que tenemos en nuestro componente Home.
-
+We will ask Copilot again for help with some additional aesthetic adjustments, in this case, we will ask it to help us widen the columns and therefore the cards we have in our Home component.
 **Prompt 12.**
 
 ```
-@workspace Como puedo volver mas anchas mis cards? #file:home.component.html #file:movie-card.component.html
+@workspace How can I make my cards wider? #file:home.component.html #file:movie-card.component.html
 ```
 
-**Resultado esperado:**
+**Expected result:**
 
-- El componente cards ocupa un espacio uniforme y adaptado a lo largo del layout de grilla en la vista del browser.
-- El componente ahora recibe directamente un unico parametro del tipo `Movie` en lugar de recibir un multiple numero de propiedades.
+- The cards component occupies a uniform and adapted space throughout the grid layout in the browser view.
+- The component now directly receives a single parameter of type `Movie` instead of receiving multiple properties.
 
-### 10. Generando componente de detalle: Movie
+### 10. Generating detail component: Movie
 
-Necesitamos generar ahora un componente que permita la visualización de las películas con su completo detalle. Es por eso que le pediremos a GitHub Copilot que nos ayude en la generación de un componente llamado MovieComponent.
+We now need to generate a component that allows the visualization of movies with their complete details. That's why we'll ask GitHub Copilot to help us generate a component called MovieComponent.
 
-Este componente deberá mostrar toda la información con el detalle de cada película. Para ello debemos indicarle a GitHub Copilot que utilizaremos Angular Material y que nos genere un layout utilizando los componentes.
-
+This component should show all the information with the details of each movie. For this, we need to indicate to GitHub Copilot that we will use Angular Material and that it should generate a layout using the components.
 **Prompt 13.**
 
 ```
-`@workspace Necesito que construyas un nuevo componente de Angular llamado Movie, este componente tiene como objetivo visualizar el completo detalle de una pelicula, debes utilizar la estructura del archivo #file:movies.db.json como base para las propiedades que debes generar. En cuanto al layout HTML sugeriria que generes una serie de elementos que incluyan una vista del thumbnail en la parte izquierda del componente y todos los demas atributos queden dentro de un layout aparte del lado derecho. Igual este componente va a estar sujeto a modificaciones que te indicare mas adelante. Este componente sera cargado bajo una nueva ruta que tiene la siguiente forma: http://localhost:4200/movie/:id, por lo que es necesario definir una nueva ruta dentro de la aplicacion para este compoente.
+@workspace I need you to build a new Angular component called Movie. This component aims to display the complete details of a movie, you should use the structure of the #file:movies.db.json file as a base for the properties you need to generate. Regarding the HTML layout, I would suggest generating a series of elements that include a thumbnail view on the left side of the component and all other attributes within a separate layout on the right side. This component will be subject to modifications that I will indicate later. This component will be loaded under a new route that has the following form: http://localhost:4200/movie/:id, so it is necessary to define a new route within the application for this component.
 ```
 
-El siguiente paso, en caso de no haberlo sugerido, es indicarle a GIthub Copilot que necesitamos que desde el componente `MovieCard` redirijamos hacia el componente movie al hacer click en el boton de "mas info". Asi que mediante un prompt le pediremos que se incluya dicha funcionalidad.
+The next step, if not already suggested, is to indicate to GitHub Copilot that we need to redirect from the `MovieCard` component to the movie component when clicking on the "more info" button. So through a prompt we will ask to include this functionality.
 
 ```
-@workspace Necesito que incluyas el codigo y la logica necesaria para que al hacer click en el boton "mas info" del componente #file:movie-card.component.html se haga una redireccion al componente de #file:movie.component.html cargando los detalles completos de la pelicula seleccionada
+@workspace I need you to include the code and logic necessary so that when clicking on the "more info" button in the #file:movie-card.component.html component, it redirects to the #file:movie.component.html component loading the complete details of the selected movie
 ```
 
-#### Ajustando un poco la vista del componente.
+#### Adjusting the component view
 
-**Hacer que la imagen ocupe la mitad del componente**:
-Haremos que Copilot modifique el tamaño de la imagen por nosotros al pedirle que la mitad izquierda del componente sea ocupada por la imagen del poster de la pelicula.
+**Making the image occupy half of the component**:
+We will have Copilot modify the image size for us by asking it to make the left half of the component be occupied by the movie poster image.
 
 ```
-@workspace Modifica el componente #file:movie.component.html para que la imagen de la pelicula ocupe el tamaño justo a nivel de altura del area disponible en el navegador, sin perder la proporcion de la imagen.
+@workspace Modify the component #file:movie.component.html so that the movie image occupies the right size in terms of height of the available area in the browser, without losing the image proportion.
 ```
 
-### 11. Top 3 Peliculas
+### 11. Top 3 Movies
 
-En este punto, le pediremos a GitHub Copilot que nos ayude a implementar un componente que muestre las 3 películas mejor calificadas en la aplicación basado en el campo score.
+At this point, we will ask GitHub Copilot to help us implement a component that shows the 3 highest rated movies in the application based on the score field.
 
 **Prompt 14.**
 
 ```
 
-@workspace Necesito que construyas un nuevo componente llamado TopMovies, este componente debe mostrar las 3 peliculas mejor calificadas en la aplicacion basado en el campo score. Este componente debe ser visible en el componente #file:home.component.html , el titulo de esta seccion debe ser "Top 3 Peliculas" y debe estar centrado
+@workspace I need you to build a new component called TopMovies, this component should display the 3 highest rated movies in the application based on the score field. This component should be visible in the #file:home.component.html component, the title of this section should be "Top 3 Movies" and should be centered
 ```
 
-**Resultado esperado:**
+**Expected result:**
 
-- Generación de un nuevo componente llamado `TopMovies`.
-- Implementación de la lógica para mostrar las 3 películas mejor calificadas en la aplicación.
-- Inclusión del componente `TopMovies` en el componente `Home`.
+- Generation of a new component called `TopMovies`.
+- Implementation of the logic to display the 3 highest rated movies in the application.
+- Inclusion of the `TopMovies` component in the `Home` component.
 
-### 12. Sección de peliculas relacionadas por genero en el detalle de la pelicula.
+### 12. Related movies by genre section in movie detail
 
-En este punto, le pediremos a GitHub Copilot que nos ayude a implementar un componente que muestre las películas relacionadas por género en el detalle de la película seleccionada.
+At this point, we will ask GitHub Copilot to help us implement a component that shows movies related by genre in the detail view of the selected movie.
 
 **Prompt 15.**
 
 ```
 
-@workspace Necesito que construyas un nuevo componente llamado RelatedMovies, este componente debe mostrar las peliculas relacionadas por genero en el detalle de la pelicula seleccionada #file:movie.component.html Este componente debe ser mostrado en el componente #file:movie-card.component.html. El titulo de la seccion debe ser "Peliculas relacionadas por genero" y debe estar centrado
+@workspace I need you to build a new component called RelatedMovies, this component should display movies related by genre in the detail view of the selected movie #file:movie.component.html This component should be shown in the #file:movie-card.component.html component. The title of the section should be "Movies related by genre" and should be centered
 ```
 
-En caso de que la pelicula en la cual se encuentre el usuario, este apareciendo en la seccion de peliculas relacionadas, se le puede solicitar ayuda a copilot
+In case the movie the user is currently viewing appears in the related movies section, you can request help from Copilot
 
 **Prompt 16.**
 
 ```
-@workspace las peliculas relacionadas no debe contener la pelicula en la cual se encuentra el usuario
+@workspace the related movies should not contain the movie the user is currently viewing
 ```
 
-**Resultado esperado:**
+**Expected result:**
 
-- Generación de un nuevo componente llamado `RelatedMovies`.
-- Implementación de la lógica para mostrar las películas relacionadas por género en el detalle de la película seleccionada.
-- Inclusión del componente `RelatedMovies` en el componente `Movie`.
+- Generation of a new component called `RelatedMovies`.
+- Implementation of the logic to display genre-related movies in the selected movie's detail view.
+- Inclusion of the `RelatedMovies` component in the `Movie` component.
 
-### 13 Funcionalidad de Favoritos
+### 13 Favorites Functionality
 
-En este punto, le pediremos a GitHub Copilot que nos ayude a implementar una funcionalidad que permita marcara una pelicula como favorita.
+At this point, we will ask GitHub Copilot to help us implement functionality that allows marking a movie as a favorite.
 
 **Prompt 17.**
 
 ```
-@workspace Necesito que construyas un nuevo componente llamado favorite-button, este componente por ahora debe mostrar un boton con icono de corazón de angular material. Este componente debe ser mostrado en el componente #file:movie-card.component.html
+@workspace I need you to build a new component called favorite-button, this component should for now display a button with a heart icon from Angular Material. This component should be shown in the #file:movie-card.component.html component
 ```
 
-En tal caso de que los botones no este separados, podemos solicitarle ayuda a copilot.
+In case the buttons are not separated, we can ask Copilot for help.
 
 **Prompt 18.**
 
 ```
-Ajusta los estilos de los botones en el componente #file:movie-card.component.html , el boton de mas info debe estar a la izquierda y el de favorite-button a la derecha
+Adjust the button styles in the component #file:movie-card.component.html, the more info button should be on the left and the favorite-button on the right
 ```
 
-**Resultado esperado:**
+**Expected result:**
 
-- Generación de un nuevo componente llamado `FavoriteButton`.
+- Generation of a new component called `FavoriteButton`.
 
 **Prompt 19.**
 
 ```
-Al hacer click en el boton de favoritos, necesito que se agregue la pelicula actual a una lista de favoritos, este listado debe ser almacenado en el local storage del navegador, se debe validar si la pelicula ya esta en la lista de favoritos y si es asi, se debe remover de la lista.
+When clicking on the favorites button, I need the current movie to be added to a favorites list, this list should be stored in the browser's local storage, it should validate if the movie is already in the favorites list and if so, it should be removed from the list.
 ```
 
-En tal caso que copilot no muestre un icono o color para indicar que la pelicula ha sido marcada como favorita, podemos solicitarle ayuda.
+In case Copilot does not show an icon or color to indicate that the movie has been marked as a favorite, we can request help.
 
 **Prompt 20.**
 
 ```
-@workspace Necesito que el boton de favoritos tenga el icono favorites, cuando este agregado como favorito y el icono favorite_border cuando no lo este
+@workspace I need the favorites button to have the favorites icon when it is added as a favorite and the favorite_border icon when it is not
 ```
 
-**Resultado esperado:**
+**Expected result:**
 
-- Implementación de la lógica para agregar y remover películas de la lista de favoritos.
-- Almacenamiento de la lista de favoritos en el local storage del navegador.
-- Cambio de icono y color del botón de favoritos al agregar o remover una película de la lista.
+- Implementation of the logic to add and remove movies from the favorites list.
+- Storage of the favorites list in the browser's local storage.
+- Change of icon and color of the favorites button when adding or removing a movie from the list.
 
-### 14. Retos propuestos.
+### 14. Proposed Challenges
 
-A este punto hemos logrado finalizar el practico y visto como GitHub Copilot nos ha ayudado a construir una aplicacion de Angular sencilla, sin embargo puede exapndirse mas el abanico de funcionalidades que se pueden implementar. A continuación se deja una serie de retos propuestos para ser completados por el equipo en el tiempo restante disponible.
+At this point we have completed the practical exercise and seen how GitHub Copilot has helped us build a simple Angular application, however the range of functionalities that can be implemented can be expanded further. Below is a series of proposed challenges to be completed by the team in the remaining available time.
 
-1. Implementar un componente de favoritos, el cual debe mostrar las peliculas marcadas como favoritas en una lista. A este componente se deberia acceder desde un link en la barra de navegacion principal.
-2. Implementar el resto de operaciones CRUD: Con ayuda de copilot, desarrollar la logica y componentes necesarios para realizar la carga, la actualizacion y eliminacion de peliculas dentro de la aplicacion.
+1. Implement a favorites component, which should display the movies marked as favorites in a list. This component should be accessed from a link in the main navigation bar.
 
-3. Implementar un filtrado: Construir un componente que permita filtrar el listado de peliculas en base a ciertas categorias como `Año`, `Genero`, `Estudio`, etc.
+2. Implement the rest of the CRUD operations: With Copilot's help, develop the logic and components needed to perform the loading, updating and deletion of movies within the application.
 
-4. Implementar pruebas unitarias para las funcionalidades de los servicios y probar que los metodos funcionan correctamente.
+3. Implement filtering: Build a component that allows filtering the movie list based on certain categories such as `Year`, `Genre`, `Studio`, etc.
+
+4. Implement unit tests for the services' functionalities and test that the methods work correctly.
