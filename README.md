@@ -186,7 +186,7 @@ To avoid handling a lot of variables, constants and properties, we will ask Copi
 
 - An interface file will be generated containing the interfaces `Actor`, `MovieDetail` and `Movie` or interfaces with similar names.
 
-### 8. Service Layer Generation
+### 8. Service Layer
 
 To avoid having logic implemented directly in components, we can encapsulate all these operations in an Angular service. This service will be injected into components through the framework's automatic dependency injection, ensuring that methods and programming logic from a specific service can be accessed from multiple components.
 
