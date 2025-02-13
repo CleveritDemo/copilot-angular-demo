@@ -39,7 +39,7 @@ Perform Basic Testing and Validation.
 
 ![app demo](/assets/gif2.gif)
 
-## 🛠 Requerimientos.
+## 🛠 Requirements.
 
 1. NodeJS v20.x - https://nodejs.org/en
 2. Angular v18 - https://angular.dev/installation
