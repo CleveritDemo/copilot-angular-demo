@@ -301,7 +301,7 @@ At this point, we will ask GitHub Copilot to help us implement a component that 
 
 ```
 
-@workspace I need you to build a new component called RelatedMovies, this component should display movies related by genre in the detail view of the selected movie #file:movie.component.html This component should be shown in the #file:movie-card.component.html component. The title of the section should be "Movies related by genre" and should be centered
+@workspace I need you to build a new component called RelatedMovies, this component should display movies related by genre in the detail view of the selected movie #file:movie.component.html This component should be shown in the #file:movie.component.html component. The title of the section should be "Movies related by genre" and should be centered
 ```
 
 In case the movie the user is currently viewing appears in the related movies section, you can request help from Copilot
